@@ -33,3 +33,6 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+#contact-form {
+    text-align: left;
+}
