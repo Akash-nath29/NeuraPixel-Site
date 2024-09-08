@@ -11,8 +11,8 @@ function Home() {
           <Link to="/download" className="cta-button">
             Download App
           </Link>
-          <Link to="/api-docs" className="cta-button">
-            API Documentation
+          <Link to="https://neurapixelai-frontend.vercel.app/" className="cta-button">
+            Try It
           </Link>
         </div>
       </span>
