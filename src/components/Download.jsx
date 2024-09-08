@@ -2,7 +2,7 @@ import './css/Download.css';
 
 function Download() {
   const handleAndroidDownload = () => {
-    const apkUrl = `${window.location.origin}/assets/neurapixelai.apk`;
+    const apkUrl = `${window.location.origin}/neurapixelai.apk`;
     console.log('Attempting to download from:', apkUrl);
     
     const link = document.createElement('a');
