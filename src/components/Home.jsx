@@ -12,7 +12,7 @@ function Home() {
             Download App
           </Link>
           <Link to="https://neurapixelai-frontend.vercel.app/" className="cta-button">
-            Try It
+            Try It Now!!
           </Link>
         </div>
       </span>
