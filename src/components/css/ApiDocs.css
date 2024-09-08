@@ -9,7 +9,9 @@
 .request-example,
 .response-example {
     margin-top: 2rem;
+    text-align: left;
 }
+
 
 code,
 pre {
