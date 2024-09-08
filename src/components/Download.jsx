@@ -24,7 +24,7 @@ function Download() {
         <button className="download-button" onClick={handleAndroidDownload}>
           Download for Android
         </button>
-        <button className="download-button">Download for iOS</button>
+        <button className="download-button" onClick={()=>alert("Coming Soon")}>Download for iOS</button>
       </div>
       <div className="app-features">
         <img src={DownloadImage} alt="Download" />
