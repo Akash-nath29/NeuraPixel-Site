@@ -3,7 +3,7 @@ import './css/Download.css';
 function Download() {
   const handleAndroidDownload = () => {
     const link = document.createElement('a');
-    link.href = '/assets/neurapixelai.apk'; // Adjust the path if necessary
+    link.href = './assets/neurapixelai.apk'; // Adjust the path if necessary
     link.download = 'neurapixelai.apk';
     document.body.appendChild(link);
     link.click();
