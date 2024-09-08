@@ -1,0 +1,67 @@
+.home {
+  text-align: center;
+  /* padding: 2rem; */
+  color: #000;
+  min-height: 80vh;
+  background: url('../assets/heroBG.jpg') no-repeat center center;
+  background-size: contain;
+}
+
+.home span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 79vh;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+  font-size: 100px;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.feature-section {
+  margin-top: 3rem;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: 88vh;
+    }
+    .home span {
+        height: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .cta-buttons {
+        margin-top: 1rem;
+    }
+    .cta-button {
+        padding: 0.3rem 0.6rem;
+        margin: 0.3rem;
+    }
+}

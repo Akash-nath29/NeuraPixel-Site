@@ -1,0 +1,36 @@
+.download {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.download-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.download-button {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.system-requirements {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.system-requirements ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.system-requirements li {
+  margin-bottom: 0.5rem;
+}
