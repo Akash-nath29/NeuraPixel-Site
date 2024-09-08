@@ -6,7 +6,7 @@ function Contact() {
     <div className="contact">
       <h1>Contact Us</h1>
       <p>Have questions or need support? Reach out to us!</p>
-      <form action="https://formsubmit.co/devakash2905@gmail.com" method="POST" id="contact-form">
+      <form action="https://formsubmit.co/41930605c3d9a45c598270cd40d75c57" method="POST" id="contact-form">
         {/* HoneyPot */}
         <input type="text" name="_honey" style={{display: 'none'}} />
 
