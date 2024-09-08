@@ -46,6 +46,15 @@ h1 {
   border-radius: 8px;
 }
 
+.home-image {
+  margin-top: 2rem;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 @media screen and (max-width: 768px) {
     .home {

@@ -34,3 +34,48 @@
 .system-requirements li {
   margin-bottom: 0.5rem;
 }
+
+.app-features {
+  margin-top: 2rem;
+}
+
+.app-features img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row.first {
+  flex-direction: row-reverse;
+}
+
+.row.second {
+  flex-direction: row;
+}
+
+.text {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.text p {
+  margin-top: 0;
+}
+
+.row img {
+  width: 200px;
+  /* height: auto; */
+  border-radius: 8px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
