@@ -1,8 +1,22 @@
 import { Link } from "react-router-dom";
 import "./css/Header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -10,16 +24,18 @@ function Header() {
 
   return (
     <header className="header">
-      <span>
+      <div className="header-content">
         <div className="logo"><Link to="/">NeuraPixel AI</Link></div>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </span>
-      <nav>
-        <ul className={isMenuOpen ? 'open' : ''}>
+        {isMobile && (
+          <div className="menu-icon" onClick={toggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+        )}
+      </div>
+      <nav className={`${isMobile ? 'mobile' : ''} ${isMenuOpen ? 'open' : ''}`}>
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>

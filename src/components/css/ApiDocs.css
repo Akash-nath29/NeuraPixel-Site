@@ -121,3 +121,109 @@ code {
     font-size: 0.9rem;
     color: #000;
 }
+
+@media (max-width: 768px) {
+    .api-docs-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: auto;
+        padding: 0.5rem;
+        background-color: #f8f9fa;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 500;
+    }
+    .sidebar-list {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0.5rem 0;
+        margin: 0;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .sidebar-list::-webkit-scrollbar {
+        display: none;
+    }
+    .sidebar-list li {
+        margin: 0 0.5rem;
+    }
+    .sidebar-list li a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #e9ecef;
+        color: #495057;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+    .sidebar-list li a:hover,
+    .sidebar-list li a:focus {
+        background-color: #007bff;
+        color: #ffffff;
+    }
+    .api-docs {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    .code-block-wrapper {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .code-block-header {
+        padding: 0.5rem 0.75rem;
+    }
+    .code-language {
+        font-size: 0.8rem;
+    }
+    .copy-button {
+        font-size: 0.8rem;
+    }
+    .copy-button::before {
+        margin-right: 3px;
+    }
+    pre, code {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+    .endpoint h2,
+    .authentication h2,
+    .request-example h2,
+    .response-example h2 {
+        font-size: 1.2rem;
+    }
+    .endpoint p,
+    .authentication p,
+    .request-example p,
+    .response-example p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .api-docs {
+        padding: 0.5rem;
+    }
+
+    .code-block-wrapper {
+        border-radius: 0;
+    }
+
+    .code-block-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .copy-button {
+        margin-top: 0.5rem;
+    }
+}

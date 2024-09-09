@@ -159,3 +159,42 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 0;
+    }
+    .mission, .technology {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-text, .technology-text {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .mission img, .technology img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
